@@ -1,0 +1,140 @@
+These slides will provide an informative and engaging *About* section, while the fun facts and pictures will keep your visitors intrigued and inspired to take action!
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #111222;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 50px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.content {
+    position: relative;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .image {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.content .image img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    max-width: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content .text-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.media-icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 1.8em;
+    margin: 20px;
+    transition: color 0.3s;
+}
+
+.media-icons a:hover {
+    color: #4caf50;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content .image {
+        width: 80%;
+        height: auto;
+    }
+
+    .content .text-box {
+        transform: translate(0, 0);
+        margin-top: 30px;
+    }
+
+    .main-title {
+        font-size: 2.5em;
+    }
+
+    .media-icons a {
+        margin: 15px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2em;
+    }
+
+    .content .image {
+        width: 100%;
+    }
+
+    .media-icons a {
+        margin: 10px;
+        font-size: 1.2em;
+    }
+}
